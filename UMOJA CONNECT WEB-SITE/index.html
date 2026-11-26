@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Umoja Community Connect | Bright Umoja Platform</title>
+    <meta name="description" content="Digital platform for Umoja residents in Nairobi to report community problems, track solutions, and participate in tree planting and youth programs.">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="asset/ulogo.png">
+    
+    <!-- Font Awesome 6 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Master Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- TOP ANNOUNCEMENT BAR -->
+    <div class="top-bar">
+        <div class="container">
+            <div class="top-bar-info">
+                <span><i class="fa-solid fa-phone-volume"></i> Umoja Emergency Hotline: <strong>+254 700 866 521</strong></span>
+                <span><i class="fa-solid fa-location-dot"></i> Nairobi City County &bull; Embakasi West Sub-County</span>
+                <span><i class="fa-solid fa-clock"></i> Response Desk: Mon - Sat (8:00 AM - 6:00 PM)</span>
+            </div>
+            <div class="top-bar-actions">
+                <span class="badge-county"><i class="fa-solid fa-shield-halved"></i> Umoja 1 &amp; 2 Community Liaison</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- MAIN NAVIGATION -->
+    <header class="main-header">
+        <div class="container">
+            <nav class="navbar">
+                <a href="index.html" class="logo-brand">
+                    <img src="asset/ulogo.png" alt="Umoja Community Connect Logo">
+                    <div class="logo-text">
+                        <span class="logo-title">UMOJA<span>CONNECT</span></span>
+                        <span class="logo-subtitle">Bright Umoja Digital Hub</span>
+                    </div>
+                </a>
+
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="nav-link active"><i class="fa-solid fa-house"></i> Home</a></li>
+                    <li><a href="pages/problem.html" class="nav-link"><i class="fa-solid fa-triangle-exclamation"></i>Problem</a></li>
+                    <li><a href="pages/events.html" class="nav-link"><i class="fa-solid fa-calendar-days"></i>Events</a></li>
+                    <li><a href="pages/opportunities.html" class="nav-link"><i class="fa-solid fa-briefcase"></i>Opportunities</a></li>
+                    <li><a href="pages/aboutus.html" class="nav-link"><i class="fa-solid fa-users"></i>AboutUs</a></li>
+                    <li><a href="pages/contact.html" class="nav-link"><i class="fa-solid fa-envelope"></i>Contact</a></li>
+                </ul>
+
+                <div class="nav-actions">
+                    <button class="header-search-btn" title="Search site" aria-label="Search">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                    <a href="pages/problem.html" class="btn-report-nav">
+                        <i class="fa-solid fa-circle-exclamation"></i> Report Issue
+                    </a>
+                    <button class="mobile-toggle" aria-label="Toggle navigation">
+                        <i class="fa-solid fa-bars"></i>
+                    </button>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- MOBILE DRAWER NAVIGATION -->
+    <div class="drawer-backdrop"></div>
+    <div class="mobile-drawer">
+        <div>
+            <div class="drawer-header">
+                <div class="logo-brand">
+                    <img src="asset/ulogo.png" alt="Umoja Community Connect">
+                    <div class="logo-text">
+                        <span class="logo-title">UMOJA<span>CONNECT</span></span>
+                        <span class="logo-subtitle">Bright Umoja</span>
+                    </div>
+                </div>
+                <button class="drawer-close" style="background:none;border:none;font-size:1.4rem;cursor:pointer;">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+            </div>
+            <nav class="drawer-nav">
+                <a href="index.html" class="nav-link active"><i class="fa-solid fa-house"></i> Home</a>
+                <a href="pages/problem.html" class="nav-link"><i class="fa-solid fa-triangle-exclamation"></i> Problem</a>
+                <a href="pages/events.html" class="nav-link"><i class="fa-solid fa-calendar-days"></i> Events</a>
+                <a href="pages/opportunities.html" class="nav-link"><i class="fa-solid fa-briefcase"></i> Opportunities</a>
+                <a href="pages/aboutus.html" class="nav-link"><i class="fa-solid fa-users"></i> AboutUs</a>
+                <a href="pages/contact.html" class="nav-link"><i class="fa-solid fa-envelope"></i> Contact</a>
+            </nav>
+        </div>
+        <div style="padding-top:1.5rem;border-top:1px solid #e2e8f0;">
+            <a href="pages/problem.html" class="btn btn-danger btn-sm" style="width:100%;margin-bottom:0.75rem;">
+                <i class="fa-solid fa-circle-exclamation"></i> Report an Issue Now
+            </a>
+            <p style="font-size:0.8rem;color:#64748b;text-align:center;margin:0;">Emergency Desk: +254 700 866 521</p>
+        </div>
+    </div>
+
+    <!-- HERO SECTION WITH COMMUNITY BANNER -->
+    <section class="hero" style="background-image:linear-gradient(135deg, rgba(15, 118, 110, 0.92) 0%, rgba(10, 77, 72, 0.94) 60%, rgba(15, 23, 42, 0.96) 100%), url('asset/hero1.jpg');">
+        <div class="container">
+            <div class="hero-content-grid">
+                <div class="hero-text">
+                    <div class="hero-pill">
+                        <i class="fa-solid fa-seedling"></i> Civic Action &bull; Tree Planting &bull; Cleaner Nairobi
+                    </div>
+                    <h1>Together for a Cleaner, Greener &amp; <span>Brighter Umoja</span></h1>
+                    <p class="lead">
+                        Connecting residents of Umoja 1, Umoja 2, and Innercore with county response units, rapid problem resolution, estate tree planting campaigns, and verified youth economic programs.
+                    </p>
+                    
+                    <div class="hero-actions">
+                        <a href="pages/problem.html" class="btn btn-accent btn-lg">
+                            <i class="fa-solid fa-bullhorn"></i> Report an Issue
+                        </a>
+                        <a href="pages/events.html" class="btn btn-outline-white btn-lg">
+                            <i class="fa-solid fa-tree"></i> Join Tree Planting
+                        </a>
+                    </div>
+
+                    <div class="hero-stats-row">
+                        <div class="hero-stat">
+                            <h3 class="counter-val" data-count="1480" data-suffix="+">1,480+</h3>
+                            <p>Issues Resolved</p>
+                        </div>
+                        <div class="hero-stat">
+                            <h3 class="counter-val" data-count="5200" data-suffix="+">5,200+</h3>
+                            <p>Trees Planted</p>
+                        </div>
+                        <div class="hero-stat">
+                            <h3 class="counter-val" data-count="3850" data-suffix="+">3,850+</h3>
+                            <p>Youth Engaged</p>
+                        </div>
+                        <div class="hero-stat">
+                            <h3 class="counter-val" data-count="94" data-suffix="%">94%</h3>
+                            <p>Response Rate</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hero Quick Action Card with Phone Reporting App image -->
+                <div class="hero-card">
+                    <div class="hero-card-header">
+                        <div class="hero-card-icon">
+                            <i class="fa-solid fa-camera"></i>
+                        </div>
+                        <div>
+                            <h3>Notice a Problem in Umoja?</h3>
+                            <p>Report in 60 seconds with instant photo upload.</p>
+                        </div>
+                    </div>
+
+                    <div style="border-radius:10px;overflow:hidden;margin-bottom:1rem;height:140px;position:relative;">
+                        <img src="asset/connect.jpg" alt="Youth reporting issues on phone" style="width:100%;height:100%;object-fit:cover;">
+                        <span class="badge badge-success" style="position:absolute;bottom:8px;right:8px;"><i class="fa-solid fa-mobile-screen"></i> Direct Phone Dispatch</span>
+                    </div>
+
+                    <p style="font-size:0.85rem;font-weight:600;margin-bottom:0.5rem;color:#334155;">Common Neighborhood Reports:</p>
+                    <div class="quick-issues-list">
+                        <a href="pages/problem.html" class="quick-issue-item">
+                            <i class="fa-solid fa-trash-can"></i> Garbage &amp; Waste
+                        </a>
+                        <a href="pages/problem.html" class="quick-issue-item">
+                            <i class="fa-solid fa-faucet-drip"></i> Blocked Drains
+                        </a>
+                        <a href="pages/problem.html" class="quick-issue-item">
+                            <i class="fa-solid fa-road"></i> Potholes
+                        </a>
+                        <a href="pages/problem.html" class="quick-issue-item">
+                            <i class="fa-solid fa-lightbulb"></i> Streetlights
+                        </a>
+                    </div>
+
+                    <a href="pages/problem.html" class="btn btn-danger" style="width:100%;font-weight:700;">
+                        <i class="fa-solid fa-circle-exclamation"></i> Submit Report Now
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROMINENT TREE PLANTING & GREENING SPOTLIGHT SECTION -->
+    <section class="section">
+        <div class="container">
+            <div class="spotlight-banner">
+                <div class="spotlight-grid">
+                    <div class="spotlight-content">
+                        <span class="section-eyebrow"><i class="fa-solid fa-tree"></i> Greening Eastlands</span>
+                        <h2 style="font-size:2.2rem;margin-bottom:1rem;color:#0f172a;">Tree Planting &amp; Green Umoja Movement</h2>
+                        <p style="font-size:1.05rem;color:#475569;line-height:1.7;margin-bottom:1.5rem;">
+                            Together with parents, school children, and youth volunteers, we are actively greening our estate courts and public spaces. Our community tree planting campaigns reclaim former illegal dumpsites, creating lush community gardens and shade along Moi Drive.
+                        </p>
+                        <ul style="margin-bottom:2rem;">
+                            <li style="display:flex;align-items:center;gap:0.75rem;margin-bottom:0.75rem;color:#334155;font-weight:600;">
+                                <i class="fa-solid fa-circle-check" style="color:#10b981;font-size:1.2rem;"></i> Over 5,200 indigenous and fruit trees planted across Umoja 1 &amp; 2
+                            </li>
+                            <li style="display:flex;align-items:center;gap:0.75rem;margin-bottom:0.75rem;color:#334155;font-weight:600;">
+                                <i class="fa-solid fa-circle-check" style="color:#10b981;font-size:1.2rem;"></i> Transforming waste spots into clean play areas for children
+                            </li>
+                            <li style="display:flex;align-items:center;gap:0.75rem;margin-bottom:0.75rem;color:#334155;font-weight:600;">
+                                <i class="fa-solid fa-circle-check" style="color:#10b981;font-size:1.2rem;"></i> Free tree seedlings distributed to schools, churches, and estate courts
+                            </li>
+                        </ul>
+                        <div style="display:flex;gap:1rem;flex-wrap:wrap;">
+                            <a href="pages/events.html" class="btn btn-primary btn-lg">
+                                <i class="fa-solid fa-hand-holding-heart"></i> Volunteer for Next Tree Planting
+                            </a>
+                            <a href="pages/problem.html" class="btn btn-outline btn-lg">
+                                <i class="fa-solid fa-seedling"></i> Request Seedlings for Your Court
+                            </a>
+                        </div>
+                    </div>
+                    <div class="spotlight-img">
+                        <img src="asset/clean.jpg" alt="Umoja Community Connect Tree Planting - Family and Children Planting Trees">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Second Spotlight: Environmental Clean-Up Working Together -->
+            <div class="spotlight-banner" style="margin-bottom:0;">
+                <div class="spotlight-grid" style="grid-template-columns: 0.9fr 1.1fr;">
+                    <div class="spotlight-img">
+                        <img src="asset/enviro.jpg" alt="Umoja Community Clean-Up - Working Together Tree Planting">
+                    </div>
+                    <div class="spotlight-content">
+                        <span class="section-eyebrow" style="background:#fef3c7;color:#92400e;"><i class="fa-solid fa-hands-holding-child"></i> Community in Action</span>
+                        <h2 style="font-size:2.2rem;margin-bottom:1rem;color:#0f172a;">Working Together for a Cleaner, Healthier Estate</h2>
+                        <p style="font-size:1.05rem;color:#475569;line-height:1.7;margin-bottom:1.5rem;">
+                            When we come together, real change happens. Every Saturday morning, our youth teams and neighborhood residents pick up rakes, brooms, and trash bags to clear roadside waste, desilt storm drains, and plant trees that protect our air and soil.
+                        </p>
+                        <div style="display:grid;grid-template-columns:1fr 1fr;gap:1.5rem;margin-bottom:1.75rem;">
+                            <div style="background:#f8fafc;padding:1.25rem;border-radius:10px;border:1px solid #e2e8f0;">
+                                <h4 style="color:#0f766e;font-size:1.4rem;margin-bottom:0.25rem;">52 Weeks</h4>
+                                <p style="font-size:0.85rem;color:#64748b;margin:0;">Consecutive Saturday cleanups held across Umoja</p>
+                            </div>
+                            <div style="background:#f8fafc;padding:1.25rem;border-radius:10px;border:1px solid #e2e8f0;">
+                                <h4 style="color:#0f766e;font-size:1.4rem;margin-bottom:0.25rem;">120+ Tonnes</h4>
+                                <p style="font-size:0.85rem;color:#64748b;margin:0;">Plastic and organic waste safely sorted and evacuated</p>
+                            </div>
+                        </div>
+                        <a href="pages/events.html" class="btn btn-accent btn-lg">
+                            <i class="fa-solid fa-calendar-check"></i> See Weekend Clean-Up Schedule
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CORE PILLARS SECTION WITH REAL PHOTOS -->
+    <section class="section section-alt">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-eyebrow">Our Core Mission</span>
+                <h2>Four Pillars Powering Umoja Forward</h2>
+                <p>Real grassroots action solving everyday civic challenges across Umoja, Nairobi.</p>
+            </div>
+
+            <div class="grid-4">
+                <!-- Pillar 1 -->
+                <div class="pillar-card">
+                    <div class="pillar-card-img">
+                        <img src="asset/dust.jpg" alt="Citizen reporting garbage on street">
+                    </div>
+                    <div class="pillar-card-body">
+                        <div class="pillar-icon-badge">
+                            <i class="fa-solid fa-camera"></i>
+                        </div>
+                        <h3>Citizen Reporting</h3>
+                        <p>Residents photograph garbage, potholes, and broken pipes for direct county escalation.</p>
+                        <a href="pages/problem.html" style="font-weight:700;font-size:0.9rem;">Submit report &rarr;</a>
+                    </div>
+                </div>
+
+                <!-- Pillar 2 -->
+                <div class="pillar-card">
+                    <div class="pillar-card-img">
+                        <img src="asset/clean.jpg" alt="People planting trees in Umoja">
+                    </div>
+                    <div class="pillar-card-body">
+                        <div class="pillar-icon-badge" style="background:#d1fae5;color:#065f46;">
+                            <i class="fa-solid fa-tree"></i>
+                        </div>
+                        <h3>Tree Planting &amp; Cleanups</h3>
+                        <p>Community-led tree planting drives and estate cleanups turning wasteland into green hubs.</p>
+                        <a href="pages/events.html" style="font-weight:700;font-size:0.9rem;">Join green drive &rarr;</a>
+                    </div>
+                </div>
+
+                <!-- Pillar 3 -->
+                <div class="pillar-card">
+                    <div class="pillar-card-img">
+                        <img src="asset/class.jpg" alt="Community environmental meeting under tree">
+                    </div>
+                    <div class="pillar-card-body">
+                        <div class="pillar-icon-badge" style="background:#fef3c7;color:#92400e;">
+                            <i class="fa-solid fa-users"></i>
+                        </div>
+                        <h3>Community Workshops</h3>
+                        <p>Outdoor barazas on waste management, water harvesting, and youth skills development.</p>
+                        <a href="pages/opportunities.html" style="font-weight:700;font-size:0.9rem;">View workshops &rarr;</a>
+                    </div>
+                </div>
+
+                <!-- Pillar 4 -->
+                <div class="pillar-card">
+                    <div class="pillar-card-img">
+                        <img src="asset/gov.jpg" alt="Civic partnership with county leaders and elders">
+                    </div>
+                    <div class="pillar-card-body">
+                        <div class="pillar-icon-badge" style="background:#dbeafe;color:#1e40af;">
+                            <i class="fa-solid fa-handshake"></i>
+                        </div>
+                        <h3>County Accountability</h3>
+                        <p>Constructive dialogue between county leadership, court committees, and local elders.</p>
+                        <a href="pages/aboutus.html" style="font-weight:700;font-size:0.9rem;">Learn more &rarr;</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- BEFORE & AFTER / TRANSFORMATION SHOWCASE -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-eyebrow">Real Results</span>
+                <h2>Neighborhood Transformation in Action</h2>
+                <p>Witness how community reporting and tree planting are revitalizing Umoja Estate.</p>
+            </div>
+
+            <div class="grid-3">
+                <!-- Card 1 -->
+                <div class="card">
+                    <div class="card-img-wrapper">
+                        <img src="asset/clean.jpg" alt="Tree planting in Umoja">
+                        <span class="badge badge-success card-badge"><i class="fa-solid fa-check"></i> Greened</span>
+                    </div>
+                    <div class="card-body">
+                        <div class="card-meta">
+                            <span><i class="fa-solid fa-location-dot"></i> Umoja 1 &bull; Court 24</span>
+                            <span><i class="fa-solid fa-calendar"></i> Planted 2026</span>
+                        </div>
+                        <h3 class="card-title">Illegal Dumpsite Converted to Community Tree Park</h3>
+                        <p class="card-text">
+                            A site once buried under rotting rubbish was cleared by youth volunteers and transformed into a thriving tree nursery and green garden.
+                        </p>
+                        <div class="card-footer">
+                            <span class="ticket-id">#UMJ-2026-1044</span>
+                            <span style="color:#0f766e;font-weight:700;font-size:0.85rem;">80+ Trees Thriving</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="card">
+                    <div class="card-img-wrapper">
+                        <img src="asset/com.jpg" alt="Clean transformed street with trees in Umoja">
+                        <span class="badge badge-success card-badge"><i class="fa-solid fa-check"></i> Restored</span>
+                    </div>
+                    <div class="card-body">
+                        <div class="card-meta">
+                            <span><i class="fa-solid fa-location-dot"></i> Umoja 2 &bull; Sector 3</span>
+                            <span><i class="fa-solid fa-calendar"></i> Ongoing</span>
+                        </div>
+                        <h3 class="card-title">Clean &amp; Healthy Future: Safe Streets for Our Children</h3>
+                        <p class="card-text">
+                            With clean paved roads, planted shade trees, and organized waste bins, children can play safely and families enjoy healthy open spaces.
+                        </p>
+                        <div class="card-footer">
+                            <span class="ticket-id">#UMJ-2026-0882</span>
+                            <span style="color:#0f766e;font-weight:700;font-size:0.85rem;">Clean Court Model</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="card">
+                    <div class="card-img-wrapper">
+                        <img src="asset/dute.jpg" alt="Volunteers unblocking drains">
+                        <span class="badge badge-warning card-badge"><i class="fa-solid fa-faucet-drip"></i> Drainage</span>
+                    </div>
+                    <div class="card-body">
+                        <div class="card-meta">
+                            <span><i class="fa-solid fa-location-dot"></i> Moi Drive Drainage Canal</span>
+                            <span><i class="fa-solid fa-calendar"></i> Weekly</span>
+                        </div>
+                        <h3 class="card-title">Storm Drain Unblocking Ahead of Heavy Rains</h3>
+                        <p class="card-text">
+                            Youth sanitation teams deployed rakes and protective gear to remove plastic debris from 450 meters of open stormwater culverts.
+                        </p>
+                        <div class="card-footer">
+                            <span class="ticket-id">#UMJ-2026-0912</span>
+                            <span style="color:#0f766e;font-weight:700;font-size:0.85rem;">Drain Flow Restored</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- WOMEN LEADING & YOUTH AMBASSADORS BANNER -->
+    <section class="section section-alt">
+        <div class="container">
+            <div style="display:grid;grid-template-columns:1fr 1fr;gap:2.5rem;align-items:center;" class="grid-2">
+                <div style="position:relative;border-radius:16px;overflow:hidden;box-shadow:0 15px 35px rgba(0,0,0,0.15);">
+                    <img src="asset/mum.jpg" alt="Umoja Women Leading Community Change with Reported Problems Board" style="width:100%;height:100%;object-fit:cover;">
+                    <div style="position:absolute;bottom:0;left:0;right:0;background:linear-gradient(to top, rgba(15,23,42,0.9), transparent);padding:1.5rem;color:#ffffff;">
+                        <span class="badge badge-success" style="margin-bottom:0.5rem;"><i class="fa-solid fa-award"></i> Women Leading</span>
+                        <h4 style="color:#ffffff;font-size:1.15rem;margin:0;">Umoja Women's Civic Action &amp; Welfare Committee</h4>
+                    </div>
+                </div>
+
+                <div>
+                    <span class="section-eyebrow">Community Leadership</span>
+                    <h2 style="font-size:2.2rem;margin-bottom:1rem;">Mothers &amp; Women Leading Estate Accountability</h2>
+                    <p style="font-size:1.05rem;color:#475569;line-height:1.7;margin-bottom:1.5rem;">
+                        In every court and market corridor across Umoja, women are the backbone of community vigilance. Through Bright Umoja, market vendors and mothers monitor water pressure, report broken streetlights, and coordinate waste collection for their blocks.
+                    </p>
+                    
+                    <div style="background:#ffffff;padding:1.5rem;border-radius:12px;border:1px solid #e2e8f0;margin-bottom:1.5rem;display:flex;align-items:center;gap:1.25rem;">
+                        <img src="asset/healthy.jpg" alt="Clean Umoja, Healthy Umoja Ambassadors" style="width:85px;height:85px;border-radius:10px;object-fit:cover;">
+                        <div>
+                            <h4 style="font-size:1.05rem;margin-bottom:0.25rem;">Youth Green Ambassadors</h4>
+                            <p style="font-size:0.85rem;color:#64748b;margin:0;">Equipped with smartphones to map and report environmental issues in real-time.</p>
+                        </div>
+                    </div>
+
+                    <div style="display:flex;gap:1rem;flex-wrap:wrap;">
+                        <a href="pages/aboutus.html" class="btn btn-primary"><i class="fa-solid fa-users"></i> Read Our Story</a>
+                        <a href="pages/contact.html" class="btn btn-outline"><i class="fa-solid fa-envelope"></i> Connect With Us</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FULL PHOTO GALLERY IN ACTION -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-eyebrow">Visual Gallery</span>
+                <h2>Umoja Community Connect in Action</h2>
+                <p>Glimpses of tree planting, cleanups, meetings, and vibrant life across Eastlands.</p>
+            </div>
+
+            <div class="photo-gallery-grid">
+                <div class="photo-gallery-item">
+                    <img src="asset/clean.jpg" alt="Family planting tree together">
+                    <div class="photo-gallery-overlay">🌱 Tree Planting &amp; Green Umoja</div>
+                </div>
+                <div class="photo-gallery-item">
+                    <img src="asset/enviro.jpg" alt="Community cleanup working together">
+                    <div class="photo-gallery-overlay">🧹 Community Saturday Clean-up Drive</div>
+                </div>
+                <div class="photo-gallery-item">
+                    <img src="asset/com.jpg" alt="Children playing in clean street with trees">
+                    <div class="photo-gallery-overlay">🏡 Restored Clean Court &amp; Planted Trees</div>
+                </div>
+                <div class="photo-gallery-item">
+                    <img src="asset/hero1.jpg" alt="Community members holding banner">
+                    <div class="photo-gallery-overlay">🤝 Umoja Estate Residents United</div>
+                </div>
+                <div class="photo-gallery-item">
+                    <img src="asset/class.jpg" alt="Outdoor environmental meeting under tree">
+                    <div class="photo-gallery-overlay">📖 Community Environmental Workshop</div>
+                </div>
+                <div class="photo-gallery-item">
+                    <img src="asset/sec2.jpg" alt="Umoja Estate street with matatus and shops">
+                    <div class="photo-gallery-overlay">🚌 Moi Drive &amp; Umoja Commercial Hub</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CALL TO ACTION BANNER WITH AERIAL PANORAMA -->
+    <section class="section" style="padding-top:1rem;">
+        <div class="container">
+            <div class="cta-banner" style="background-image:linear-gradient(135deg, rgba(15,118,110,0.92) 0%, rgba(10,77,72,0.96) 100%), url('asset/sec1.jpg');background-size:cover;background-position:center;">
+                <h2>Ready to Make Umoja Cleaner, Greener &amp; Safer?</h2>
+                <p>Join over 3,800 active residents, youth champions, and community groups driving real solutions right where we live.</p>
+                <div style="display:flex;justify-content:center;gap:1rem;flex-wrap:wrap;">
+                    <a href="pages/problem.html" class="btn btn-accent btn-lg">
+                        <i class="fa-solid fa-bullhorn"></i> Report an Issue Today
+                    </a>
+                    <a href="pages/events.html" class="btn btn-outline-white btn-lg">
+                        <i class="fa-solid fa-tree"></i> Join Next Tree Planting
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html" class="logo-brand">
+                        <img src="asset/ulogo.png" alt="Umoja Community Connect Logo">
+                        <div class="logo-text">
+                            <span class="logo-title">UMOJA<span>CONNECT</span></span>
+                            <span class="logo-subtitle">Bright Umoja Digital Platform</span>
+                        </div>
+                    </a>
+                    <p>
+                        A civic-tech initiative dedicated to empowering residents of Umoja, Nairobi through transparent community issue reporting, environmental tree planting, cleanups, and youth vocational opportunities.
+                    </p>
+                    <div class="social-links">
+                        <a href="#" class="social-link" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#" class="social-link" aria-label="X / Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+                        <a href="#" class="social-link" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" class="social-link" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html"><i class="fa-solid fa-angle-right"></i> Home</a></li>
+                        <li><a href="pages/problem.html"><i class="fa-solid fa-angle-right"></i>Problem</a></li>
+                        <li><a href="pages/problem.html#tracker"><i class="fa-solid fa-angle-right"></i> Issue Status Tracker</a></li>
+                        <li><a href="pages/events.html"><i class="fa-solid fa-angle-right"></i>Events</a></li>
+                        <li><a href="pages/opportunities.html"><i class="fa-solid fa-angle-right"></i>Opportunities</a></li>
+                        <li><a href="pages/aboutus.html"><i class="fa-solid fa-angle-right"></i> About Us</a></li>
+                        <li><a href="pages/contact.html"><i class="fa-solid fa-angle-right"></i> Contact &amp; Support</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Emergency &amp; Ward</h4>
+                    <div class="footer-contact-item">
+                        <i class="fa-solid fa-phone"></i>
+                        <div>
+                            <strong>Community Helpline</strong><br>
+                            +254 700 866 521 / +254 711 234 567
+                        </div>
+                    </div>
+                    <div class="footer-contact-item">
+                        <i class="fa-solid fa-shield-halved"></i>
+                        <div>
+                            <strong>Umoja Police Post</strong><br>
+                            +254 20 234 5678 (24/7 Desk)
+                        </div>
+                    </div>
+                    <div class="footer-contact-item">
+                        <i class="fa-solid fa-truck-droplet"></i>
+                        <div>
+                            <strong>Nairobi Water &amp; Sewerage</strong><br>
+                            Toll Free: 0800 720 018
+                        </div>
+                    </div>
+                    <div class="footer-contact-item">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <div>
+                            <strong>Ward Office</strong><br>
+                            Near Chief's Office, Moi Drive, Umoja
+                        </div>
+                    </div>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Community Alerts</h4>
+                    <p style="font-size:0.9rem;margin-bottom:0.75rem;">
+                        Receive instant SMS &amp; email notices on tree planting schedules, water rationing alerts, and new youth programs.
+                    </p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Enter your email or phone" required>
+                        <button type="submit" class="btn btn-sm btn-primary">Join</button>
+                    </form>
+                    <p style="font-size:0.75rem;color:#64748b;margin-top:0.5rem;">
+                        We value your privacy. No spam guaranteed.
+                    </p>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div>
+                    &copy; 2026 Umoja Community Connect (Bright Umoja). All rights reserved.
+                </div>
+                <div style="display:flex;gap:1.5rem;">
+                    <a href="#" style="color:#94a3b8;">Privacy Policy</a>
+                    <a href="#" style="color:#94a3b8;">Terms of Service</a>
+                    <a href="pages/contact.html" style="color:#94a3b8;">Report Fraud</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- QUICK SEARCH MODAL -->
+    <div class="modal-overlay" id="searchModal">
+        <div class="modal-card" style="max-width:550px;">
+            <div class="modal-header">
+                <h3><i class="fa-solid fa-magnifying-glass" style="color:#0f766e;margin-right:0.5rem;"></i> Search Umoja Connect</h3>
+                <button class="modal-close"><i class="fa-solid fa-xmark"></i></button>
+            </div>
+            <div class="modal-body">
+                <input type="text" id="siteSearchInput" class="form-control" placeholder="Search problems, events, tree planting, hotlines..." style="padding:0.9rem 1.2rem;font-size:1.05rem;">
+                <div id="siteSearchResults" style="margin-top:1rem;max-height:280px;overflow-y:auto;">
+                    <p style="color:#94a3b8;font-size:0.9rem;text-align:center;padding:1rem;">Type to search pages, events, or services...</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- JAVASCRIPT -->
+    <script src="main.js"></script>
+</body>
+</html>
