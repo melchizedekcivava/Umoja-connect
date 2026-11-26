@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Problem | Umoja Community Connect</title>
+    <meta name="description" content="Report garbage, blocked drains, road potholes, and street lighting issues in Umoja Nairobi with real-time status tracking and tree planting reclamation.">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="../asset/ulogo.png">
+    
+    <!-- Font Awesome 6 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Master Stylesheet -->
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+    <!-- TOP ANNOUNCEMENT BAR -->
+    <div class="top-bar">
+        <div class="container">
+            <div class="top-bar-info">
+                <span><i class="fa-solid fa-phone-volume"></i> Umoja Emergency Hotline: <strong>+254 700 866 521</strong></span>
+                <span><i class="fa-solid fa-location-dot"></i> Nairobi City County &bull; Embakasi West Sub-County</span>
+                <span><i class="fa-solid fa-clock"></i> Response Desk: Mon - Sat (8:00 AM - 6:00 PM)</span>
+            </div>
+            <div class="top-bar-actions">
+                <span class="badge-county"><i class="fa-solid fa-shield-halved"></i> Umoja 1 &amp; 2 Community Liaison</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- MAIN NAVIGATION -->
+    <header class="main-header">
+        <div class="container">
+            <nav class="navbar">
+                <a href="../index.html" class="logo-brand">
+                    <img src="../asset/ulogo.png" alt="Umoja Community Connect Logo">
+                    <div class="logo-text">
+                        <span class="logo-title">UMOJA<span>CONNECT</span></span>
+                        <span class="logo-subtitle">Bright Umoja Digital Hub</span>
+                    </div>
+                </a>
+
+                <ul class="nav-menu">
+                    <li><a href="../index.html" class="nav-link"><i class="fa-solid fa-house"></i> Home</a></li>
+                    <li><a href="problem.html" class="nav-link active"><i class="fa-solid fa-triangle-exclamation"></i>Problem</a></li>
+                    <li><a href="events.html" class="nav-link"><i class="fa-solid fa-calendar-days"></i> Events</a></li>
+                    <li><a href="opportunities.html" class="nav-link"><i class="fa-solid fa-briefcase"></i> Opportunities</a></li>
+                    <li><a href="aboutus.html" class="nav-link"><i class="fa-solid fa-users"></i> AboutUs</a></li>
+                    <li><a href="contact.html" class="nav-link"><i class="fa-solid fa-envelope"></i> Contact</a></li>
+                </ul>
+
+                <div class="nav-actions">
+                    <button class="header-search-btn" title="Search site" aria-label="Search">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                    <a href="#report-form" class="btn-report-nav">
+                        <i class="fa-solid fa-circle-exclamation"></i> Report Issue
+                    </a>
+                    <button class="mobile-toggle" aria-label="Toggle navigation">
+                        <i class="fa-solid fa-bars"></i>
+                    </button>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- MOBILE DRAWER NAVIGATION -->
+    <div class="drawer-backdrop"></div>
+    <div class="mobile-drawer">
+        <div>
+            <div class="drawer-header">
+                <div class="logo-brand">
+                    <img src="../asset/ulogo.png" alt="Umoja Community Connect">
+                    <div class="logo-text">
+                        <span class="logo-title">UMOJA<span>CONNECT</span></span>
+                        <span class="logo-subtitle">Bright Umoja</span>
+                    </div>
+                </div>
+                <button class="drawer-close" style="background:none;border:none;font-size:1.4rem;cursor:pointer;">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+            </div>
+            <nav class="drawer-nav">
+                <a href="../index.html" class="nav-link"><i class="fa-solid fa-house"></i> Home</a>
+                <a href="problem.html" class="nav-link active"><i class="fa-solid fa-triangle-exclamation"></i>Problem</a>
+                <a href="events.html" class="nav-link"><i class="fa-solid fa-calendar-days"></i>  Events</a>
+                <a href="opportunities.html" class="nav-link"><i class="fa-solid fa-briefcase"></i> Opportunities</a>
+                <a href="aboutus.html" class="nav-link"><i class="fa-solid fa-users"></i> AboutUs</a>
+                <a href="contact.html" class="nav-link"><i class="fa-solid fa-envelope"></i> Contact </a>
+            </nav>
+        </div>
+        <div style="padding-top:1.5rem;border-top:1px solid #e2e8f0;">
+            <a href="#report-form" class="btn btn-danger btn-sm" style="width:100%;margin-bottom:0.75rem;">
+                <i class="fa-solid fa-circle-exclamation"></i> Report an Issue Now
+            </a>
+            <p style="font-size:0.8rem;color:#64748b;text-align:center;margin:0;">Emergency Desk: +254 700 866 521</p>
+        </div>
+    </div>
+
+    <!-- PAGE HERO -->
+    <div class="page-hero">
+        <div class="container">
+            <div class="breadcrumbs">
+                <a href="../index.html"><i class="fa-solid fa-house"></i> Home</a>
+                <i class="fa-solid fa-angle-right" style="font-size:0.75rem;"></i>
+                <span>Problem</span>
+            </div>
+            <h1>Report a Community Issue</h1>
+            <p>
+                Spotted illegal dumping, blocked drains, road potholes, or broken streetlights in Umoja? Submit your report below with photos for immediate dispatch to county units and tree planting reclamation.
+            </p>
+            <div style="display:flex;justify-content:center;gap:1rem;flex-wrap:wrap;">
+                <a href="#report-form" class="btn btn-accent"><i class="fa-solid fa-pen-to-square"></i> File New Report</a>
+                <a href="#tracker" class="btn btn-outline-white"><i class="fa-solid fa-magnifying-glass"></i> Track Existing Ticket</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- VISUAL ISSUE EXAMPLES GRID -->
+    <section class="section" style="padding-bottom:1rem;">
+        <div class="container">
+            <div class="section-header" style="margin-bottom:2.5rem;">
+                <span class="section-eyebrow">Common Incidents</span>
+                <h2>What Can You Report on This Platform?</h2>
+                <p>Click on any issue type below to jump straight to the reporting form.</p>
+            </div>
+
+            <div class="grid-4">
+                <a href="#report-form" class="card" style="text-decoration:none;">
+                    <div class="card-img-wrapper" style="height:170px;">
+                        <img src="../asset/dust.jpg" alt="Garbage and waste report">
+                        <span class="badge badge-danger card-badge"><i class="fa-solid fa-trash-can"></i> Garbage</span>
+                    </div>
+                    <div class="card-body" style="padding:1rem;">
+                        <h4 style="font-size:1.05rem;color:#0f172a;margin-bottom:0.25rem;">Garbage &amp; Dumpsites</h4>
+                        <p style="font-size:0.85rem;color:#64748b;margin:0;">Overflowing street bins, illegal dumps, plastic heaps.</p>
+                    </div>
+                </a>
+
+                <a href="#report-form" class="card" style="text-decoration:none;">
+                    <div class="card-img-wrapper" style="height:170px;">
+                        <img src="../asset/block4.jpg" alt="Burst pipe and flooded drain">
+                        <span class="badge badge-warning card-badge"><i class="fa-solid fa-faucet-drip"></i> Drainage</span>
+                    </div>
+                    <div class="card-body" style="padding:1rem;">
+                        <h4 style="font-size:1.05rem;color:#0f172a;margin-bottom:0.25rem;">Blocked Drains &amp; Sewage</h4>
+                        <p style="font-size:0.85rem;color:#64748b;margin:0;">Burst pipes, flooded courts, clogged stormwater channels.</p>
+                    </div>
+                </a>
+
+                <a href="#report-form" class="card" style="text-decoration:none;">
+                    <div class="card-img-wrapper" style="height:170px;">
+                        <img src="../asset/road.jpg" alt="Potholes and broken roads">
+                        <span class="badge badge-info card-badge"><i class="fa-solid fa-road"></i> Roads</span>
+                    </div>
+                    <div class="card-body" style="padding:1rem;">
+                        <h4 style="font-size:1.05rem;color:#0f172a;margin-bottom:0.25rem;">Road Potholes &amp; Culverts</h4>
+                        <p style="font-size:0.85rem;color:#64748b;margin:0;">Deep road craters, broken slabs, hazard trenches.</p>
+                    </div>
+                </a>
+
+                <a href="#report-form" class="card" style="text-decoration:none;">
+                    <div class="card-img-wrapper" style="height:170px;">
+                        <img src="../asset/clean.jpg" alt="People planting trees in reclaimed area">
+                        <span class="badge badge-success card-badge"><i class="fa-solid fa-tree"></i> Green Drive</span>
+                    </div>
+                    <div class="card-body" style="padding:1rem;">
+                        <h4 style="font-size:1.05rem;color:#0f172a;margin-bottom:0.25rem;">Tree Planting Reclamation</h4>
+                        <p style="font-size:0.85rem;color:#64748b;margin:0;">Report cleared spots to receive free tree seedlings.</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- REPORTING FORM SECTION -->
+    <section class="section" id="report-form" style="padding-top:2rem;">
+        <div class="container">
+            <div style="max-width:920px;margin:0 auto;">
+                <div class="form-card">
+                    <div style="border-bottom:1px solid #e2e8f0;padding-bottom:1.5rem;margin-bottom:2rem;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:1rem;">
+                        <div>
+                            <span class="badge badge-danger" style="margin-bottom:0.5rem;"><i class="fa-solid fa-bolt"></i> Official Community Dispatch</span>
+                            <h2>Community Incident Report Form</h2>
+                            <p style="margin:0;font-size:0.95rem;">Please provide accurate details so our response coordinators can dispatch teams rapidly.</p>
+                        </div>
+                        <img src="../asset/connect.jpg" alt="Reporting on mobile" style="width:70px;height:70px;border-radius:12px;object-fit:cover;border:2px solid #0f766e;">
+                    </div>
+
+                    <form id="reportProblemForm">
+                        <input type="hidden" id="selectedCategory" value="Garbage &amp; Dumpsites">
+
+                        <!-- Category Selector -->
+                        <div class="form-group">
+                            <label class="form-label">1. Select Issue Category <span class="required">*</span></label>
+                            <div class="category-selector">
+                                <div class="category-option selected" data-category="Garbage &amp; Dumpsites">
+                                    <i class="fa-solid fa-trash-can"></i>
+                                    <span>Garbage &amp; Dumpsite</span>
+                                </div>
+                                <div class="category-option" data-category="Blocked Drainage">
+                                    <i class="fa-solid fa-faucet-drip"></i>
+                                    <span>Blocked Drainage</span>
+                                </div>
+                                <div class="category-option" data-category="Roads &amp; Potholes">
+                                    <i class="fa-solid fa-road"></i>
+                                    <span>Roads &amp; Potholes</span>
+                                </div>
+                                <div class="category-option" data-category="Streetlights &amp; Lighting">
+                                    <i class="fa-solid fa-lightbulb"></i>
+                                    <span>Broken Streetlights</span>
+                                </div>
+                                <div class="category-option" data-category="Tree Planting Reclamation">
+                                    <i class="fa-solid fa-tree"></i>
+                                    <span>Tree Planting Site</span>
+                                </div>
+                                <div class="category-option" data-category="Environmental / Noise">
+                                    <i class="fa-solid fa-volume-high"></i>
+                                    <span>Pollution / Water</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Location & Ward -->
+                        <div style="display:grid;grid-template-columns:1fr 1fr;gap:1.5rem;" class="grid-2">
+                            <div class="form-group">
+                                <label class="form-label" for="issueWard">2. Ward / Area in Umoja <span class="required">*</span></label>
+                                <select id="issueWard" class="form-control" required>
+                                    <option value="Umoja 1">Umoja 1 (Courts 1 - 35)</option>
+                                    <option value="Umoja 2">Umoja 2 (Sector 1 - 5)</option>
+                                    <option value="Innercore">Innercore Estate</option>
+                                    <option value="Tena Estate">Tena Estate Corridor</option>
+                                    <option value="Moi Drive Commercial">Moi Drive Commercial Zone</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label" for="issueLocation">3. Specific Street / Court / Landmark <span class="required">*</span></label>
+                                <input type="text" id="issueLocation" class="form-control" placeholder="e.g. Court 16, Behind Chief's Camp, Opposite PCEA" required>
+                            </div>
+                        </div>
+
+                        <!-- Description & Severity -->
+                        <div class="form-group">
+                            <label class="form-label" for="issueDescription">4. Describe the Problem in Detail <span class="required">*</span></label>
+                            <textarea id="issueDescription" class="form-control" placeholder="Describe how long this issue has persisted, how it affects residents, and any immediate hazards (e.g. smell, impassable road, dark street at night)..." required></textarea>
+                        </div>
+
+                        <div style="display:grid;grid-template-columns:1fr 1fr;gap:1.5rem;" class="grid-2">
+                            <div class="form-group">
+                                <label class="form-label" for="issueUrgency">5. Urgency Level</label>
+                                <select id="issueUrgency" class="form-control">
+                                    <option value="Moderate">Moderate (Standard follow-up in 24-48 hrs)</option>
+                                    <option value="Urgent">Urgent (Health hazard or blocked main road)</option>
+                                    <option value="Emergency">Emergency (Active flood, exposed live wires)</option>
+                                    <option value="Low">Low / Long-term planning</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label">6. Date First Observed</label>
+                                <input type="date" class="form-control" value="2026-11-10">
+                            </div>
+                        </div>
+
+                        <!-- Image Upload Area with sample preview tags -->
+                        <div class="form-group">
+                            <label class="form-label">7. Upload Photo or Video Proof (Highly Recommended)</label>
+                            <div class="file-dropzone" onclick="document.getElementById('fileInput').click()">
+                                <input type="file" id="fileInput" style="display:none;" accept="image/*,video/*">
+                                <i class="fa-solid fa-cloud-arrow-up"></i>
+                                <h4 style="font-size:1.05rem;margin-bottom:0.35rem;">Click to upload or drag photo here</h4>
+                                <p style="font-size:0.85rem;color:#64748b;margin:0;">Clear smartphone photos help county sanitation and road trucks locate the exact spot immediately.</p>
+                            </div>
+                        </div>
+
+                        <!-- Reporter Info -->
+                        <div style="border-top:1px solid #e2e8f0;padding-top:1.5rem;margin-top:2rem;">
+                            <h4 style="margin-bottom:1rem;font-size:1.1rem;"><i class="fa-solid fa-user-shield" style="color:#0f766e;margin-right:0.5rem;"></i> Reporter Contact Details</h4>
+                            <div style="display:grid;grid-template-columns:1fr 1fr;gap:1.5rem;" class="grid-2">
+                                <div class="form-group">
+                                    <label class="form-label">Your Name</label>
+                                    <input type="text" class="form-control" placeholder="e.g. Victor Mutua">
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-label">Phone Number (For SMS ticket updates)</label>
+                                    <input type="tel" class="form-control" placeholder="e.g. 0722 000 000">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label style="display:flex;align-items:center;gap:0.6rem;font-size:0.9rem;cursor:pointer;">
+                                    <input type="checkbox" style="width:18px;height:18px;accent-color:#0f766e;">
+                                    <span>Submit anonymously (Hide my contact info from public display)</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <div style="margin-top:2rem;">
+                            <button type="submit" class="btn btn-danger btn-lg" style="width:100%;font-weight:700;">
+                                <i class="fa-solid fa-paper-plane"></i> Submit Issue &amp; Generate Tracking Ticket
+                            </button>
+                            <p style="text-align:center;font-size:0.8rem;color:#64748b;margin-top:0.75rem;">
+                                By submitting, you confirm that this report is genuine. False reporting hinders community emergency response.
+                            </p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- LIVE STATUS TRACKER SECTION -->
+    <section class="section section-alt" id="tracker">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-eyebrow">Real-Time Transparency</span>
+                <h2>Umoja Live Issue Tracker</h2>
+                <p>Track the progress of neighborhood reports submitted by your neighbors. Search by Ticket ID or keyword.</p>
+            </div>
+
+            <div class="tracker-box">
+                <div class="tracker-header">
+                    <div>
+                        <h3 style="font-size:1.15rem;margin-bottom:0.25rem;">Active Community Tickets</h3>
+                        <p style="font-size:0.85rem;margin:0;">Updated live from Embakasi West Sub-County Liaison Desk</p>
+                    </div>
+                    <div style="min-width:280px;">
+                        <input type="text" id="trackerSearchInput" class="form-control" placeholder="Search ticket # or keyword..." style="padding:0.5rem 1rem;">
+                    </div>
+                </div>
+
+                <div class="tracker-table-wrapper">
+                    <table class="tracker-table">
+                        <thead>
+                            <tr>
+                                <th>Ticket ID</th>
+                                <th>Issue &amp; Location</th>
+                                <th>Ward</th>
+                                <th>Reported Date</th>
+                                <th>Current Status</th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+                        <tbody id="trackerTableBody">
+                            <tr>
+                                <td><span class="ticket-id">#UMJ-2026-1044</span></td>
+                                <td><strong>Garbage Mounds Cleared &amp; Tree Planting</strong><br><small style="color:#64748b;">Court 24 &bull; 80 Trees Planted</small></td>
+                                <td><span class="badge badge-info">Umoja 1</span></td>
+                                <td>08 Nov 2026</td>
+                                <td><span class="badge badge-success"><i class="fa-solid fa-circle-check"></i> Resolved &bull; Greened</span></td>
+                                <td><button class="btn btn-sm btn-outline view-details-btn" data-id="UMJ-2026-1044">Details</button></td>
+                            </tr>
+                            <tr>
+                                <td><span class="ticket-id">#UMJ-2026-1039</span></td>
+                                <td><strong>Blocked Storm Drain Causing Flooding</strong><br><small style="color:#64748b;">Moi Drive Commercial Strip</small></td>
+                                <td><span class="badge badge-info">Umoja 2</span></td>
+                                <td>07 Nov 2026</td>
+                                <td><span class="badge badge-warning"><i class="fa-solid fa-spinner fa-spin"></i> In Progress</span></td>
+                                <td><button class="btn btn-sm btn-outline view-details-btn" data-id="UMJ-2026-1039">Details</button></td>
+                            </tr>
+                            <tr>
+                                <td><span class="ticket-id">#UMJ-2026-1028</span></td>
+                                <td><strong>Three Broken High-Mast Floodlights</strong><br><small style="color:#64748b;">Innercore Sector 3 Junction</small></td>
+                                <td><span class="badge badge-info">Innercore</span></td>
+                                <td>05 Nov 2026</td>
+                                <td><span class="badge badge-warning"><i class="fa-solid fa-clock"></i> Inspection Scheduled</span></td>
+                                <td><button class="btn btn-sm btn-outline view-details-btn" data-id="UMJ-2026-1028">Details</button></td>
+                            </tr>
+                            <tr>
+                                <td><span class="ticket-id">#UMJ-2026-0985</span></td>
+                                <td><strong>Burst Clean Water Supply Line</strong><br><small style="color:#64748b;">Court 8 Entrance Gate</small></td>
+                                <td><span class="badge badge-info">Umoja 1</span></td>
+                                <td>03 Nov 2026</td>
+                                <td><span class="badge badge-success"><i class="fa-solid fa-circle-check"></i> Resolved</span></td>
+                                <td><button class="btn btn-sm btn-outline view-details-btn" data-id="UMJ-2026-0985">Details</button></td>
+                            </tr>
+                            <tr>
+                                <td><span class="ticket-id">#UMJ-2026-0962</span></td>
+                                <td><strong>Deep Trench Pothole After Rain</strong><br><small style="color:#64748b;">Feeder Road Behind Market</small></td>
+                                <td><span class="badge badge-info">Umoja 2</span></td>
+                                <td>01 Nov 2026</td>
+                                <td><span class="badge badge-success"><i class="fa-solid fa-circle-check"></i> Resolved</span></td>
+                                <td><button class="btn btn-sm btn-outline view-details-btn" data-id="UMJ-2026-0962">Details</button></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4-STEP ACCOUNTABILITY WITH REAL IMAGES -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-eyebrow">Accountability Roadmap</span>
+                <h2>How Your Report Leads to Real Action</h2>
+                <p>Every report logged goes through a structured 4-step verified workflow.</p>
+            </div>
+
+            <div class="grid-4">
+                <div class="card">
+                    <div class="card-img-wrapper" style="height:160px;">
+                        <img src="../asset/connect.jpg" alt="Citizen logging report on smartphone">
+                    </div>
+                    <div class="card-body" style="padding:1.25rem;">
+                        <div style="font-weight:800;color:#0f766e;font-size:1.4rem;margin-bottom:0.25rem;">01. Log Issue</div>
+                        <p style="font-size:0.88rem;color:#475569;margin:0;">Citizen snaps photo with GPS location and submits through our mobile platform.</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-img-wrapper" style="height:160px;">
+                        <img src="../asset/road.jpg" alt="Field verification by coordinators">
+                    </div>
+                    <div class="card-body" style="padding:1.25rem;">
+                        <div style="font-weight:800;color:#0f766e;font-size:1.4rem;margin-bottom:0.25rem;">02. Field Check</div>
+                        <p style="font-size:0.88rem;color:#475569;margin:0;">Ward youth coordinator inspects the site and verifies urgency within 4-12 hours.</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-img-wrapper" style="height:160px;">
+                        <img src="../asset/dute.jpg" alt="Drainage and sanitation response team">
+                    </div>
+                    <div class="card-body" style="padding:1.25rem;">
+                        <div style="font-weight:800;color:#0f766e;font-size:1.4rem;margin-bottom:0.25rem;">03. County Action</div>
+                        <p style="font-size:0.88rem;color:#475569;margin:0;">County sanitation, roads, or drainage teams dispatch equipment to resolve the issue.</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-img-wrapper" style="height:160px;">
+                        <img src="../asset/clean.jpg" alt="Reclaimed site with trees planted">
+                    </div>
+                    <div class="card-body" style="padding:1.25rem;">
+                        <div style="font-weight:800;color:#0f766e;font-size:1.4rem;margin-bottom:0.25rem;">04. Tree Greening</div>
+                        <p style="font-size:0.88rem;color:#475569;margin:0;">The cleared area is planted with trees and green seedlings to prevent re-dumping.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="../index.html" class="logo-brand">
+                        <img src="../asset/ulogo.png" alt="Umoja Community Connect Logo">
+                        <div class="logo-text">
+                            <span class="logo-title">UMOJA<span>CONNECT</span></span>
+                            <span class="logo-subtitle">Bright Umoja Digital Platform</span>
+                        </div>
+                    </a>
+                    <p>
+                        A civic-tech initiative dedicated to empowering residents of Umoja, Nairobi through transparent community issue reporting, environmental cleanups, tree planting, and youth vocational opportunities.
+                    </p>
+                    <div class="social-links">
+                        <a href="#" class="social-link" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#" class="social-link" aria-label="X / Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+                        <a href="#" class="social-link" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" class="social-link" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="../index.html"><i class="fa-solid fa-angle-right"></i> Home</a></li>
+                        <li><a href="reportaproblem.html"><i class="fa-solid fa-angle-right"></i> Report a Problem</a></li>
+                        <li><a href="#tracker"><i class="fa-solid fa-angle-right"></i> Issue Status Tracker</a></li>
+                        <li><a href="events.html"><i class="fa-solid fa-angle-right"></i> Community Events</a></li>
+                        <li><a href="opportunities.html"><i class="fa-solid fa-angle-right"></i> Youth Opportunities</a></li>
+                        <li><a href="aboutus.html"><i class="fa-solid fa-angle-right"></i> About Us</a></li>
+                        <li><a href="contact.html"><i class="fa-solid fa-angle-right"></i> Contact &amp; Support</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Emergency &amp; Ward</h4>
+                    <div class="footer-contact-item">
+                        <i class="fa-solid fa-phone"></i>
+                        <div>
+                            <strong>Community Helpline</strong><br>
+                            +254 700 866 521 / +254 711 234 567
+                        </div>
+                    </div>
+                    <div class="footer-contact-item">
+                        <i class="fa-solid fa-shield-halved"></i>
+                        <div>
+                            <strong>Umoja Police Post</strong><br>
+                            +254 20 234 5678 (24/7 Desk)
+                        </div>
+                    </div>
+                    <div class="footer-contact-item">
+                        <i class="fa-solid fa-truck-droplet"></i>
+                        <div>
+                            <strong>Nairobi Water &amp; Sewerage</strong><br>
+                            Toll Free: 0800 720 018
+                        </div>
+                    </div>
+                    <div class="footer-contact-item">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <div>
+                            <strong>Ward Office</strong><br>
+                            Near Chief's Office, Moi Drive, Umoja
+                        </div>
+                    </div>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Community Alerts</h4>
+                    <p style="font-size:0.9rem;margin-bottom:0.75rem;">
+                        Receive instant SMS &amp; email notices on cleanup schedules, water rationing alerts, and new youth programs.
+                    </p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Enter your email or phone" required>
+                        <button type="submit" class="btn btn-sm btn-primary">Join</button>
+                    </form>
+                    <p style="font-size:0.75rem;color:#64748b;margin-top:0.5rem;">
+                        We value your privacy. No spam guaranteed.
+                    </p>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div>
+                    &copy; 2026 Umoja Community Connect (Bright Umoja). All rights reserved.
+                </div>
+                <div style="display:flex;gap:1.5rem;">
+                    <a href="#" style="color:#94a3b8;">Privacy Policy</a>
+                    <a href="#" style="color:#94a3b8;">Terms of Service</a>
+                    <a href="contact.html" style="color:#94a3b8;">Report Fraud</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- TICKET GENERATED SUCCESS MODAL -->
+    <div class="modal-overlay" id="ticketModal">
+        <div class="modal-card">
+            <div class="modal-header" style="background:#f0fdfa;">
+                <h3 style="color:#0f766e;"><i class="fa-solid fa-circle-check"></i> Ticket Created Successfully!</h3>
+                <button class="modal-close"><i class="fa-solid fa-xmark"></i></button>
+            </div>
+            <div class="modal-body">
+                <div style="text-align:center;padding:1rem 0;">
+                    <div style="font-size:0.9rem;color:#64748b;margin-bottom:0.5rem;">YOUR TRACKING NUMBER:</div>
+                    <div id="modalTicketId" style="font-size:1.8rem;font-weight:800;color:#0f766e;font-family:monospace;background:#f1f5f9;padding:0.5rem 1rem;border-radius:8px;display:inline-block;letter-spacing:1px;">
+                        #UMJ-2026-9811
+                    </div>
+                </div>
+
+                <div style="background:#f8fafc;padding:1.25rem;border-radius:8px;border:1px solid #e2e8f0;margin:1.25rem 0;font-size:0.9rem;">
+                    <div style="margin-bottom:0.5rem;"><strong>Category:</strong> <span id="modalTicketCategory">Garbage &amp; Dumpsite</span></div>
+                    <div style="margin-bottom:0.5rem;"><strong>Location:</strong> <span id="modalTicketWard">Umoja 1</span></div>
+                    <div><strong>Date Logged:</strong> <span id="modalTicketDate">Today</span></div>
+                </div>
+
+                <p style="font-size:0.88rem;color:#475569;margin-bottom:1.5rem;">
+                    Our field coordinator for your ward has been alerted. You can track this ticket on the live tracker table anytime.
+                </p>
+
+                <div style="display:flex;justify-content:flex-end;gap:0.75rem;">
+                    <button type="button" class="btn btn-outline modal-cancel-btn">Close</button>
+                    <a href="#tracker" class="btn btn-primary modal-cancel-btn">View on Tracker &rarr;</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- QUICK SEARCH MODAL -->
+    <div class="modal-overlay" id="searchModal">
+        <div class="modal-card" style="max-width:550px;">
+            <div class="modal-header">
+                <h3><i class="fa-solid fa-magnifying-glass" style="color:#0f766e;margin-right:0.5rem;"></i> Search Umoja Connect</h3>
+                <button class="modal-close"><i class="fa-solid fa-xmark"></i></button>
+            </div>
+            <div class="modal-body">
+                <input type="text" id="siteSearchInput" class="form-control" placeholder="Search problems, events, tree planting, hotlines..." style="padding:0.9rem 1.2rem;font-size:1.05rem;">
+                <div id="siteSearchResults" style="margin-top:1rem;max-height:280px;overflow-y:auto;">
+                    <p style="color:#94a3b8;font-size:0.9rem;text-align:center;padding:1rem;">Type to search pages, events, or services...</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- JAVASCRIPT -->
+    <script src="../main.js"></script>
+</body>
+</html>
