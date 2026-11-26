@@ -300,7 +300,7 @@ function initModals() {
         rsvpForm.addEventListener('submit', (e) => {
             e.preventDefault();
             document.getElementById('rsvpModal').classList.remove('active');
-            showToast('RSVP Confirmed! A SMS confirmation has been simulated.', 'success');
+            showToast('RSVP Confirmed! A confirmation message has been recorded.', 'success');
             rsvpForm.reset();
         });
     }
@@ -381,14 +381,14 @@ function initQuickSearch() {
     });
 
     const searchableData = [
-        { title: 'Report Garbage & Waste', page: 'Report a Problem', link: 'pages/reportaproblem.html#report-form' },
-        { title: 'Blocked Drains & Sewage', page: 'Report a Problem', link: 'pages/reportaproblem.html#report-form' },
-        { title: 'Track Reported Issues', page: 'Tracker', link: 'pages/reportaproblem.html#tracker' },
-        { title: 'Umoja Green Cleanup Drive', page: 'Events', link: 'pages/events.html' },
-        { title: 'Youth Tech & Digital Hub', page: 'Opportunities', link: 'pages/opportunities.html' },
-        { title: 'Nairobi Micro-Grant for Youth', page: 'Opportunities', link: 'pages/opportunities.html' },
-        { title: 'About Bright Umoja & Mission', page: 'About Us', link: 'pages/aboutus.html' },
-        { title: 'Emergency Hotlines & Ward Desk', page: 'Contact', link: 'pages/contact.html' }
+        { title: 'Report Garbage & Waste', page: 'Report a Problem', link: 'reportaproblem.html#report-form' },
+        { title: 'Blocked Drains & Sewage', page: 'Report a Problem', link: 'reportaproblem.html#report-form' },
+        { title: 'Track Reported Issues', page: 'Tracker', link: 'reportaproblem.html#tracker' },
+        { title: 'Umoja Green Cleanup Drive', page: 'Events', link: 'events.html' },
+        { title: 'Youth Tech & Digital Hub', page: 'Opportunities', link: 'opportunities.html' },
+        { title: 'Nairobi Micro-Grant for Youth', page: 'Opportunities', link: 'opportunities.html' },
+        { title: 'About Bright Umoja & Mission', page: 'About Us', link: 'aboutus.html' },
+        { title: 'Emergency Hotlines & Ward Desk', page: 'Contact', link: 'contact.html' }
     ];
 
     searchInput.addEventListener('input', (e) => {
